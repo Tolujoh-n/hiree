@@ -113,7 +113,7 @@ const App = () => {
             path="/dashboard"
             element={
               isLoggedIn ? (
-                <Dashboard onLogout={handleLogout} />
+                <Dashboard darkMode={darkMode} toggleDarkMode={toggleDarkMode} onLogout={handleLogout} />
               ) : (
                 <Navigate to="/login" />
               )
